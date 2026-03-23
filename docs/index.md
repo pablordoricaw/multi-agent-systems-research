@@ -14,7 +14,7 @@ The landscape is dominated by a handful of open-source frameworks spanning two p
 - **Self-evolving agents**: Live-SWE-agent autonomously evolves its own scaffold at runtime, pointing toward agents that improve themselves without human-designed architecture.
 - **Emerging domains**: Multi-agent systems are spreading into security operations (agentic SOC pipelines), autonomous driving (design space exploration), healthcare administration, and cross-domain network orchestration.
 
-**Open problems** include reliable long-horizon planning, inter-agent trust and coordination at scale, cost management for multi-model tiering, and robust evaluation beyond narrow benchmarks. For the raw mechanics behind every framework — agent loops, tool calling, state serialization, and the orchestration tax — see [Internals](internals.md). For a practical guide to measuring whether your agent system actually works, see [Evaluation](evals.md).
+**Open problems** include reliable long-horizon planning, inter-agent trust and coordination at scale, cost management for multi-model tiering, and robust evaluation beyond narrow benchmarks. For the raw mechanics behind every framework — agent loops, tool calling, state serialization, and the orchestration tax — see [Internals](internals.md). To see how these mechanics manifest in closed-source systems you use every day, see [Production Systems](production-systems/index.md), which reverse-engineers Claude Code and Perplexity Computer using the vocabulary from the rest of this site. For a practical guide to measuring whether your agent system actually works, see [Evaluation](evals.md).
 
 ---
 

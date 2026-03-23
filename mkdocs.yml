@@ -60,6 +60,10 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Internals: internals.md
+  - Production Systems:
+    - Overview: production-systems/index.md
+    - Claude Code: production-systems/claude-code.md
+    - Perplexity Computer: production-systems/perplexity-computer.md
   - Getting Started: getting-started.md
   - Full Workflow: workflow.md
   - Evaluation: evals.md

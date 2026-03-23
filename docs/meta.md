@@ -2,6 +2,17 @@
 
 ## Changelog
 
+### v1.3.0 — March 23, 2026
+
+- New section: **Production Systems** — reverse-engineers two closed-source agentic systems using a five-layer methodology (Observable Behavior → Inferred Architecture → Published Information → OSS Analog Mapping → DIY Replication Path).
+- New page: **Claude Code** (`production-systems/claude-code.md`) — deep dive into Anthropic's agentic coding assistant. Covers the single-agent + tool loop architecture, 17 exposed tools, extended thinking, context compaction, CLAUDE.md convention, SWE-bench benchmarks, and DIY replication with open-source models (Qwen2.5-Coder, DeepSeek, Devstral).
+- New page: **Perplexity Computer** (`production-systems/perplexity-computer.md`) — deep dive into Perplexity's multi-agent research and task assistant. Covers the orchestrator + subagent architecture, Firecracker VM isolation, integrated search pipeline (200B+ URLs, Vespa AI), skill system, connector ecosystem, and DIY replication with LangGraph + open-source search.
+- New page: **Production Systems Overview** (`production-systems/index.md`) — methodology explanation and system comparison table.
+- Updated **Learning Path** (`learning-path.md`) — added Week 0 ("Production Systems — What You're Actually Using") before existing weeks. Curriculum is now 5 weeks. Existing Weeks 1–4 unchanged.
+- Updated navigation: added Production Systems section between Internals and Getting Started.
+- Updated Executive Overview in `index.md` with reference to Production Systems.
+- Sources: 50+ new web sources, engineering blogs, system prompt analyses, and benchmark data referenced.
+
 ### v1.0.0 — March 23, 2026
 
 - Initial research compilation covering 10 frameworks and tools across research/orchestration and software development agents.

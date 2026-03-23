@@ -1,6 +1,6 @@
 # Learning Path
 
-An opinionated 4-week curriculum for engineers who want to go from zero to production-ready multi-agent systems. Each week has a concrete milestone. Do the work — don't just read.
+An opinionated 5-week curriculum for engineers who want to go from zero to production-ready multi-agent systems. Each week has a concrete milestone. Do the work — don't just read.
 
 ---
 
@@ -30,6 +30,53 @@ The following learning resources were reviewed to identify what the field covers
 - No cost optimization content — multi-agent systems can be expensive; nobody teaches you how to manage this
 
 This curriculum addresses all four gaps explicitly.
+
+---
+
+## Week 0: Production Systems — What You're Actually Using
+
+**Goal:** Before studying frameworks, understand what production agentic systems look like from the outside in.
+
+Most curricula throw you into framework tutorials before you've seen what a finished product actually does. This week reverses that. You'll study two shipping production systems — one single-agent, one multi-agent — observe their behavior hands-on, and map what you see to the architectural concepts you'll build from scratch in Weeks 1–4.
+
+### Day 1–2: Claude Code — Single-Agent Architecture
+
+- Set up Claude Code (or observe demo videos/screenshots if no API key)
+- Observe and document: What tools does it use? How does it read and edit files? When does it ask for confirmation?
+- Map what you see to the agent loop from [Internals](internals.md)
+- Reference the [Claude Code production systems page](production-systems/claude-code.md)
+- Exercise: Write down the 5 most common patterns you observe in Claude Code's behavior
+
+Claude Code is a terminal-based CLI that runs a single agent loop against your codebase. It uses a suite of file system tools (`read_file`, `write_file`, `bash`, `glob`, `grep`) and asks for explicit confirmation before applying writes or running shell commands. Watch how it manages the context window across a long session — it prunes history aggressively to stay within limits. This is the same loop you'll build in Week 1, implemented at production quality.
+
+### Day 3–4: Perplexity Computer — Multi-Agent Architecture
+
+- Use Perplexity Computer (free tier available) for a complex research task
+- Observe: When does it spawn subagents? How does it handle parallel work? How does it cite sources?
+- Map what you see to the handoff patterns from [Internals](internals.md)
+- Reference the [Perplexity Computer production systems page](production-systems/perplexity-computer.md)
+- Exercise: Identify which subagent types were used and what each contributed
+
+Perplexity Computer is a cloud-based multi-agent system that decomposes complex tasks into parallel subtasks, routes each to a specialized subagent (web search, browser, file operations, code execution), and synthesizes results through an orchestrator. Compare this to Claude Code's single-agent design: the same agent loop, but now there are many of them running in parallel with an orchestrator managing handoffs.
+
+### Day 5–6: Compare the Two Architectures
+
+- Side-by-side analysis: single-agent (Claude Code) vs. multi-agent (Perplexity Computer)
+- When does single-agent win? (Focused coding tasks, file system work)
+- When does multi-agent win? (Research, parallel information gathering, complex multi-domain tasks)
+- Reference [Internals § 6 — The Orchestration Tax](internals.md#6-the-orchestration-tax) for the cost/latency tradeoffs
+- Exercise: For 5 real tasks you do regularly, which architecture would you choose and why?
+
+The core tradeoff: single-agent systems are simpler, cheaper, and easier to debug. Multi-agent systems pay an orchestration tax — extra latency and cost for each agent hop — but unlock parallel execution and specialization. Neither architecture is universally superior; the right choice depends on the task.
+
+### Day 7: The DIY Question
+
+- Review the DIY Replication Path sections of both production system pages
+- Survey the open-source landscape: What models and frameworks would you need?
+- Exercise: Pick ONE component (e.g., "a coding agent with file tools") and sketch how you'd build it with open-source tools
+- This sets the stage for Week 1, where you'll build the raw mechanics yourself
+
+**Milestone:** A written comparison of two production architectures, mapped to the internals concepts, with a plan for what to build in Weeks 1–4.
 
 ---
 
@@ -400,6 +447,7 @@ Cross-domain network orchestration using multi-agent workflows has been demonstr
 
 | Week | Focus | Framework | Key Deliverable |
 |------|-------|-----------|----------------|
+| 0 | Production systems — observe before you build | None (observation) | Written comparison of Claude Code vs. Perplexity Computer, mapped to internals concepts |
 | 1 | Foundations — raw mechanics | None (raw API) | Single agent with tools, memory, RAG |
 | 2 | Multi-agent pipelines | CrewAI | 4-agent pipeline with eval suite |
 | 3 | Graph-based orchestration | LangGraph | Pipeline with routing, checkpointing, HITL |
