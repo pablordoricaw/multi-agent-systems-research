@@ -1,0 +1,71 @@
+site_name: Multi-Agent Systems Research
+site_description: Deep-dive research on multi-agent systems — frameworks, architectures, and learning paths for engineers.
+site_author: po2311@columbia.edu
+repo_url: https://github.com/pablordoricaw/multi-agent-systems-research
+repo_name: pablordoricaw/multi-agent-systems-research
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Deep Dives:
+    - LangGraph: deep-dives/langgraph.md
+    - AutoGen: deep-dives/autogen.md
+    - CrewAI: deep-dives/crewai.md
+    - OpenAI Swarm: deep-dives/openai-swarm.md
+    - Agency Swarm: deep-dives/agency-swarm.md
+    - SWE-agent: deep-dives/swe-agent.md
+    - OpenHands: deep-dives/openhands.md
+    - Aider: deep-dives/aider.md
+    - Patchwork: deep-dives/patchwork.md
+    - Devin: deep-dives/devin.md
+  - Comparisons: comparisons.md
+  - Learning Path: learning-path.md
+  - Changelog & Sources: meta.md

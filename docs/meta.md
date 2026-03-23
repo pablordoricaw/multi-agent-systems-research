@@ -1,0 +1,76 @@
+# Changelog & Sources
+
+## Changelog
+
+### v1.0.0 — March 23, 2026
+
+- Initial research compilation covering 10 frameworks and tools across research/orchestration and software development agents.
+- Deep dives for: LangGraph, AutoGen, CrewAI, OpenAI Swarm, Agency Swarm, SWE-agent, OpenHands, Aider, Patchwork, Devin.
+- Comparison tables, decision matrix, and maturity assessment.
+- 4-week learning path for engineers.
+- Sources: 15+ academic papers, 10+ GitHub repositories, industry reports, and framework documentation.
+
+---
+
+## Academic Sources
+
+| # | Paper | Authors | Venue / Year | DOI / Link | Code Available |
+|---|-------|---------|--------------|------------|----------------|
+| 1 | SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering | Yang et al. | NeurIPS 2024 | [arXiv:2405.15793](https://arxiv.org/abs/2405.15793) | Yes — [GitHub](https://github.com/SWE-agent/SWE-agent) |
+| 2 | Agentless: Demystifying LLM-based Software Engineering Agents | Xia et al. | ACM 2025 | [DOI:10.1145/3715754](https://dl.acm.org/doi/10.1145/3715754) | Yes — [GitHub](https://github.com/OpenAutoCoder/Agentless) |
+| 3 | Live-SWE-agent: Can Software Engineering Agents Self-Evolve on the Fly? | Xia et al. | arXiv 2025 | [arXiv:2511.13646](https://arxiv.org/abs/2511.13646) | Yes — [GitHub](https://github.com/OpenAutoCoder/live-swe-agent) |
+| 4 | HALO: Hierarchical Autonomous Logic-Oriented Orchestration | Hou et al. | arXiv 2025 | [arXiv:2505.13516](https://arxiv.org/abs/2505.13516) | Yes — [GitHub](https://github.com/23japhone/HALO) |
+| 5 | SagaLLM: Context Management, Validation, and Transaction Guarantees | Chang & Geng | VLDB 2025 | [DOI:10.14778/3750601.3750611](https://dl.acm.org/doi/10.14778/3750601.3750611) | No |
+| 6 | LEGOMem: Modular Procedural Memory for Multi-agent LLM Systems | Han et al. | arXiv 2025 | [arXiv:2510.04851](https://arxiv.org/abs/2510.04851) | No |
+| 7 | OSC: Cognitive Orchestration through Dynamic Knowledge Alignment | Zhang et al. | arXiv 2025 | [arXiv:2509.04876](https://arxiv.org/abs/2509.04876) | No |
+| 8 | MASAI: Modular Architecture for Software-engineering AI Agents | Arora et al. | arXiv 2024 | [arXiv:2406.11638](https://arxiv.org/abs/2406.11638) | No |
+| 9 | ChatDev: Communicative Agents for Software Development | Qian et al. | arXiv 2024 | [arXiv:2307.07924](https://arxiv.org/abs/2307.07924) | Yes — [GitHub](https://github.com/OpenBMB/ChatDev) |
+| 10 | HyperAgent: Generalist Software Engineering Agents | Phan et al. | arXiv 2024 | [arXiv:2409.16299](https://arxiv.org/abs/2409.16299) | No |
+| 11 | The OpenHands Software Agent SDK | OpenHands Team | arXiv 2025 | [arXiv:2511.03690](https://arxiv.org/html/2511.03690v1) | Yes — [GitHub](https://github.com/All-Hands-AI/OpenHands) |
+| 12 | SWE-smith: Scaling Data for Software Engineering Agents | Yang et al. | NeurIPS 2025 | [NeurIPS Poster](https://neurips.cc/virtual/2025/poster/121828) | Yes — [swesmith.com](https://swesmith.com) |
+| 13 | SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution | Li et al. | arXiv 2025 | [arXiv:2507.23348](https://arxiv.org/abs/2507.23348) | No |
+| 14 | SWE-Dev: Evaluating and Training Autonomous Feature-Driven Software Development | Du et al. | arXiv 2025 | [arXiv:2505.16975](https://arxiv.org/abs/2505.16975) | Yes — [GitHub](https://github.com/DorothyDUUU/SWE-Dev) |
+| 15 | Large Language Model-Based Agents for Software Engineering: A Survey | Liu et al. | arXiv 2024 | [arXiv:2409.02977](https://arxiv.org/abs/2409.02977) | No |
+| 16 | Multi-Agent Real-time Chat Orchestration (MARCO) | Shrimal et al. | arXiv 2024 | [arXiv:2410.21784](https://arxiv.org/abs/2410.21784) | No |
+| 17 | Multi-Agent LLM Orchestration Achieves Deterministic Decision Support for Incident Response | Drammeh | arXiv 2025 | [arXiv:2511.15755](https://arxiv.org/abs/2511.15755) | Yes |
+| 18 | OmniNova: A General Multimodal Agent Framework | Du | arXiv 2025 | [arXiv:2503.20028](https://arxiv.org/abs/2503.20028) | No |
+| 19 | A Multi-Agent LLM Framework for Design Space Exploration in Autonomous Driving | Shih et al. | arXiv 2025 | [arXiv:2512.08476](https://arxiv.org/abs/2512.08476) | No |
+| 20 | VoCare AI: A Multi-Agent LLM Workflow for Improved Clinic Operational Efficiency | Han et al. | IEEE TENCON 2025 | [IEEE:11375163](https://ieeexplore.ieee.org/document/11375163/) | Yes — [GitHub](https://github.com/DerrickLJH2000/langgraph-voice-assistant) |
+
+## GitHub Repositories Referenced
+
+| Repository | Stars | Language | License | Last Active |
+|------------|-------|----------|---------|-------------|
+| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 27,241 | Python | MIT | 2026-03-23 |
+| [microsoft/autogen](https://github.com/microsoft/autogen) | 56,069 | Python | CC-BY-4.0 | 2026-03-21 |
+| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 46,965 | Python | MIT | 2026-03-23 |
+| [openai/swarm](https://github.com/openai/swarm) | 21,211 | Python | MIT | 2025-03-11 |
+| [VRSEN/agency-swarm](https://github.com/VRSEN/agency-swarm) | 4,108 | Python | MIT | 2026-03-23 |
+| [SWE-agent/SWE-agent](https://github.com/SWE-agent/SWE-agent) | 18,821 | Python | MIT | 2026-03-23 |
+| [All-Hands-AI/OpenHands](https://github.com/All-Hands-AI/OpenHands) | 69,606 | Python | Custom | 2026-03-23 |
+| [Aider-AI/aider](https://github.com/Aider-AI/aider) | 42,286 | Python | Apache-2.0 | 2026-03-17 |
+| [patched-codes/patchwork](https://github.com/patched-codes/patchwork) | 1,548 | Python | AGPL-3.0 | 2025-04-18 |
+| [OpenAutoCoder/Agentless](https://github.com/OpenAutoCoder/Agentless) | 2,022 | Python | MIT | 2024-12-22 |
+| [OpenAutoCoder/live-swe-agent](https://github.com/OpenAutoCoder/live-swe-agent) | 339 | Python | MIT | 2026-01-19 |
+
+## Web Sources
+
+- [AutoGen — Microsoft Research](https://www.microsoft.com/en-us/research/project/autogen/)
+- [LangGraph: Agent Orchestration Framework](https://www.langchain.com/langgraph)
+- [CrewAI: The Leading Multi-Agent Platform](https://crewai.com)
+- [Devin's 2025 Performance Review — Cognition Labs](https://cognition.ai/blog/devin-annual-performance-review-2025)
+- [Goldman Sachs Deploys Devin — IBM Think](https://www.ibm.com/think/news/goldman-sachs-first-ai-employee-devin)
+- [OpenHands: The Open Platform for Cloud Coding Agents](https://openhands.dev)
+- [Aider: AI Pair Programming in Your Terminal](https://aider.chat)
+- [Patched.codes: Production-ready Agentic Workflows](https://www.patched.codes)
+- [CrewAI vs LangGraph vs AutoGen — DataCamp](https://www.datacamp.com/tutorial/crewai-vs-langgraph-vs-autogen)
+- [Best Multi-Agent Frameworks in 2026 — GuruSup](https://gurusup.com/blog/best-multi-agent-frameworks-2026)
+- [Best AI Agent Frameworks 2025 — Maxim AI](https://www.getmaxim.ai/articles/top-5-ai-agent-frameworks-in-2025-a-practical-guide-for-ai-builders/)
+- [CodeAct Agent Framework — Emergent Mind](https://www.emergentmind.com/topics/codeact-agent-framework)
+- [OpenAI Swarm Announcement — Campus Technology](https://campustechnology.com/articles/2024/10/29/new-openai-swarm-framework-offers-experimental-tool-for-multi-agent-ai-networks.aspx)
+- [How to Learn Agentic AI in 2025 — The Hustling Engineer](https://thehustlingengineer.substack.com/p/how-to-learn-agentic-ai-in-2025-a)
+- [The Ultimate AI Agents Roadmap 2025 — The AI Corner](https://www.the-ai-corner.com/p/the-ultimate-ai-agents-roadmap-2025)
+
+---
+
+*All star counts and last-active dates were collected on March 23, 2026 via the GitHub API.*
