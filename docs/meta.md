@@ -5,10 +5,18 @@
 ### v1.0.0 — March 23, 2026
 
 - Initial research compilation covering 10 frameworks and tools across research/orchestration and software development agents.
-- Deep dives for: LangGraph, AutoGen, CrewAI, OpenAI Swarm, Agency Swarm, SWE-agent, OpenHands, Aider, Patchwork, Devin.
+- Deep dives for: LangGraph, AutoGen, CrewAI, OpenAI Agents SDK, Agency Swarm, SWE-agent, OpenHands, Aider, Patchwork, Devin.
 - Comparison tables, decision matrix, and maturity assessment.
 - 4-week learning path for engineers.
 - Sources: 15+ academic papers, 10+ GitHub repositories, industry reports, and framework documentation.
+
+### v1.1.0 — March 23, 2026
+
+- Replaced OpenAI Swarm deep dive with OpenAI Agents SDK deep dive (Swarm's production successor).
+- Added `site_url` to `mkdocs.yml` for canonical URLs.
+- Created root `README.md` with project description and live-docs link.
+- Expanded Day 7 of the learning path with agentic security research use cases: vulnerability discovery (SWE-agent), multi-agent SOC operations (arXiv:2511.15755), and hardware/firmware analysis agents.
+- Updated comparison tables and decision matrix to reflect Agents SDK.
 
 ---
 
@@ -49,6 +57,7 @@
 | [SWE-agent/SWE-agent](https://github.com/SWE-agent/SWE-agent) | 18,821 | Python | MIT | 2026-03-23 |
 | [All-Hands-AI/OpenHands](https://github.com/All-Hands-AI/OpenHands) | 69,606 | Python | Custom | 2026-03-23 |
 | [Aider-AI/aider](https://github.com/Aider-AI/aider) | 42,286 | Python | Apache-2.0 | 2026-03-17 |
+| [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | 20,220 | Python | MIT | 2026-03-23 |
 | [patched-codes/patchwork](https://github.com/patched-codes/patchwork) | 1,548 | Python | AGPL-3.0 | 2025-04-18 |
 | [OpenAutoCoder/Agentless](https://github.com/OpenAutoCoder/Agentless) | 2,022 | Python | MIT | 2024-12-22 |
 | [OpenAutoCoder/live-swe-agent](https://github.com/OpenAutoCoder/live-swe-agent) | 339 | Python | MIT | 2026-01-19 |
@@ -67,6 +76,10 @@
 - [Best Multi-Agent Frameworks in 2026 — GuruSup](https://gurusup.com/blog/best-multi-agent-frameworks-2026)
 - [Best AI Agent Frameworks 2025 — Maxim AI](https://www.getmaxim.ai/articles/top-5-ai-agent-frameworks-in-2025-a-practical-guide-for-ai-builders/)
 - [CodeAct Agent Framework — Emergent Mind](https://www.emergentmind.com/topics/codeact-agent-framework)
+- [OpenAI Agents SDK Documentation](https://openai.github.io/openai-agents-python/)
+- [OpenAI Agents SDK — Mem0 Review](https://www.mem0.ai/blog/openai-agents-sdk-review/)
+- [OpenAI Agents SDK — 0DeepResearch Analysis](https://0deepresearch.com/blog/post/openai-agents-sdk)
+- [OpenAI Agents SDK — Fast.io Comprehensive Guide](https://fast.io/blog/a-comprehensive-guide-to-the-openai-agents-sdk)
 - [OpenAI Swarm Announcement — Campus Technology](https://campustechnology.com/articles/2024/10/29/new-openai-swarm-framework-offers-experimental-tool-for-multi-agent-ai-networks.aspx)
 - [How to Learn Agentic AI in 2025 — The Hustling Engineer](https://thehustlingengineer.substack.com/p/how-to-learn-agentic-ai-in-2025-a)
 - [The Ultimate AI Agents Roadmap 2025 — The AI Corner](https://www.the-ai-corner.com/p/the-ultimate-ai-agents-roadmap-2025)

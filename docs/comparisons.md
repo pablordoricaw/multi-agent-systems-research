@@ -9,7 +9,7 @@ A structured comparison of the major multi-agent frameworks and software develop
 | [LangGraph](deep-dives/langgraph.md) | 27.2k | Graph state machine | Complex branching workflows, pipelines | Yes | LangGraph Cloud | Python, TS | Production | Moderate |
 | [AutoGen](deep-dives/autogen.md) | 56.1k | Conversational collaboration | Dynamic dialogues, human-in-the-loop | Yes | Distributed | Python | Production | Moderate |
 | [CrewAI](deep-dives/crewai.md) | 47.0k | Role-based teams | Business workflows, rapid prototyping | Yes | CrewAI AMP | Python | Production (growing) | Low |
-| [OpenAI Swarm](deep-dives/openai-swarm.md) | 21.2k | Agent handoffs | Learning, prototyping only | Yes | No | Python | Experimental (archived) | Low |
+| [OpenAI Agents SDK](deep-dives/openai-agents-sdk.md) | 20.2k | Agent handoffs + guardrails | Production multi-agent workflows | Yes | Client-side (any infra) | Python, TS | Production | Low |
 | [Agency Swarm](deep-dives/agency-swarm.md) | 4.1k | Hierarchical agencies | Business automation, API workflows | Yes | No | Python | Growing | Low-Moderate |
 
 ## Software Development Agents
@@ -45,10 +45,9 @@ Production-Ready ─────────────────────
 │                                                        │
 │  LangGraph    Aider    OpenHands    Devin              │
 │      AutoGen    SWE-agent                              │
-│          CrewAI                                         │
+│          CrewAI    OpenAI Agents SDK                    │
 │              Agency Swarm                              │
 │                  Patchwork                              │
-│                                     OpenAI Swarm       │
 │                                                        │
 └────────────────────────────────────────────────────────┘
 ```
@@ -67,7 +66,7 @@ Production-Ready ─────────────────────
 | Research-grade SE agent | SWE-agent | ACI design, training pipeline (SWE-smith) |
 | Enterprise code at scale | Devin | Proven at Goldman Sachs, migrations, security |
 | CI/CD automation | Patchwork | Self-hosted, PR reviews, security patching |
-| Learning multi-agent basics | OpenAI Swarm | Simplest possible implementation |
+| Lightweight production agents | OpenAI Agents SDK | Cleanest handoff model, built-in tracing + guardrails |
 | OpenAI ecosystem + structure | Agency Swarm | Extends Agents SDK with practical features |
 
 ## Cross-Domain Presence

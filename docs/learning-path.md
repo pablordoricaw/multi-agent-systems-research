@@ -12,7 +12,7 @@ A sequenced, opinionated 4-week learning path for an engineer going from zero to
 
 - Read the [Getting Started](getting-started.md) page for key terminology (memory, tool use, orchestration patterns).
 - Understand the difference between chat completion, function calling, and agentic loops.
-- Explore the [OpenAI Swarm](deep-dives/openai-swarm.md) source code — it is under 100 lines and demonstrates the handoff pattern in its simplest form.
+- Explore the [OpenAI Agents SDK](deep-dives/openai-agents-sdk.md) and its predecessor Swarm's source code — Swarm is under 100 lines and demonstrates the handoff pattern in its simplest form, while the Agents SDK shows how those patterns scale to production.
 
 ### Day 3–4: Build a Single-Agent Tool User
 
@@ -137,15 +137,33 @@ pip install autogen-agentchat autogen-ext
     - Local model (Llama 3 via Ollama) for sensitive data processing.
 - Measure cost and latency differences.
 
-### Day 7: Explore the Frontier
+### Day 7: Explore the Frontier — Agentic Security Research
 
-- Read 2–3 papers from the [Changelog & Sources](meta.md):
-    - [Live-SWE-agent](https://arxiv.org/abs/2511.13646) — self-evolving agents
-    - [LEGOMem](https://arxiv.org/abs/2510.04851) — procedural memory
-    - [SagaLLM](https://dl.acm.org/doi/10.14778/3750601.3750611) — transactional guarantees
-- Identify one area (memory, evaluation, security, hardware) to deep-dive in your own research.
+Multi-agent systems are rapidly expanding into security research, a domain with natural parallels to the plan-act-observe loop that agents excel at. Explore these three frontiers:
 
-**Milestone**: Hands-on experience with 4+ frameworks, understanding of production patterns, and a clear direction for further specialization.
+**Vulnerability Discovery with SWE-agent**
+
+- SWE-agent's [Agent-Computer Interface](deep-dives/swe-agent.md) was designed for bug fixing, but the same architecture applies to offensive security. The repo explicitly lists cybersecurity as a supported use case. Experiment with pointing SWE-agent at a deliberately vulnerable codebase (e.g., OWASP Juice Shop or DVWA) and observe how the ACI navigates code to locate weaknesses.
+- [SWE-smith](https://swesmith.com) (NeurIPS 2025) provides a pipeline for synthesizing bugs in real codebases — the inverse of this process is automated vulnerability generation.
+
+**Multi-Agent Security Operations**
+
+- Read [Multi-Agent LLM Orchestration Achieves Deterministic, High-Quality Decision Support for Incident Response](https://arxiv.org/abs/2511.15755) (Drammeh, 2025). In 348 controlled trials, multi-agent orchestration achieved a 100% actionable recommendation rate vs. 1.7% for single-agent approaches — an 80x improvement in action specificity with zero quality variance. This paper makes the case that multi-agent architecture is a production-readiness requirement, not a performance optimization, for LLM-based incident response.
+- Security Data Pipeline Platforms are evolving into agentic systems where autonomous agents act as data engineers — generating parsing rules for unseen log formats, executing Sigma detection rules within the pipeline layer, and orchestrating extraction-transformation-loading alongside threat hunting.
+
+**Hardware and Firmware Analysis Agents — Emerging Frontier**
+
+- Multi-agent LLM frameworks are beginning to appear in hardware design space exploration. A [2025 paper](https://arxiv.org/abs/2512.08476) (Shih et al.) demonstrates specialized LLM agents for autonomous driving system DSE — agents handle user input interpretation, design point generation, execution orchestration, and analysis of visual/textual outputs from 3D simulations.
+- The same multi-agent patterns apply to firmware analysis: one agent for binary disassembly and function identification, another for control flow analysis, a third for vulnerability pattern matching, and an orchestrator to synthesize findings. This remains largely unexplored territory with high potential for engineers who understand both hardware internals and agentic architectures.
+- Cross-domain network orchestration using multi-agent workflows has been demonstrated across IP, optical, and robotic domains ([Xu et al., 2025](https://arxiv.org/abs/2410.10831)), suggesting the pattern generalizes to any domain requiring coordinated analysis of heterogeneous systems.
+
+**Recommended reading:**
+
+- [Live-SWE-agent](https://arxiv.org/abs/2511.13646) — self-evolving agents that improve their own scaffold at runtime
+- [LEGOMem](https://arxiv.org/abs/2510.04851) — procedural memory for multi-agent workflow automation
+- [SagaLLM](https://dl.acm.org/doi/10.14778/3750601.3750611) — transactional guarantees for multi-agent planning
+
+**Milestone**: Hands-on experience with 4+ frameworks, understanding of production patterns, and a clear direction for further specialization — particularly at the intersection of multi-agent systems and security/hardware research.
 
 ---
 

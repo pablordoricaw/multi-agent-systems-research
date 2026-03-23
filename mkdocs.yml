@@ -1,4 +1,5 @@
 site_name: Multi-Agent Systems Research
+site_url: https://pablordoricaw.github.io/multi-agent-systems-research/
 site_description: Deep-dive research on multi-agent systems — frameworks, architectures, and learning paths for engineers.
 site_author: po2311@columbia.edu
 repo_url: https://github.com/pablordoricaw/multi-agent-systems-research
@@ -59,7 +60,7 @@ nav:
     - LangGraph: deep-dives/langgraph.md
     - AutoGen: deep-dives/autogen.md
     - CrewAI: deep-dives/crewai.md
-    - OpenAI Swarm: deep-dives/openai-swarm.md
+    - OpenAI Agents SDK: deep-dives/openai-agents-sdk.md
     - Agency Swarm: deep-dives/agency-swarm.md
     - SWE-agent: deep-dives/swe-agent.md
     - OpenHands: deep-dives/openhands.md
